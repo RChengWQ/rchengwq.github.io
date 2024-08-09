@@ -16,15 +16,20 @@
 
     <div class="app">
 
+        <!--Navbar implemented using bootstrap.-->
         <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
             
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Ricky Cheng</a>
 
+                <!--This creates a button that displays the navbar when it collapses, due to window size.-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                <!--This contains the links that are on the navbar.
+                    The links should redirect to different sections of the webpage rather than different pages.
+                    Currently this feature is untested, due to the webpage not being long enough to have a scrollbar.-->
                 <div class="collapse navbar-collapse" id="navbar-links">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 " >
                         <li class="nav-item "><a class="nav-link" href="#about-me">About Me</a></li>
@@ -37,20 +42,56 @@
             
         <main>
 
-            <section id="welcome">
-                
-                <p>Welcome to my website.</p>
 
+            <!--TODO: Section containing a welcome to the site.
+                May be used for summary, in which case about me section will be replaced-->
+            <section id="welcome">
+                <p>Welcome to my website.</p>
             </section>
 
+            <!--TODO: Section containing short summary. 
+                May put skills in this section, may create separate section for skills.-->
             <section id="about-me">
                 <h1>About Me</h1>
             </section>
 
+            <!--Section containing carousel to show off projects.
+                Cards are used to organise the slides.
+                Project slides, will include Project name, image, link to github repo, and a list of skills used-->
             <section id="projects">
                 <h1>My Projects</h1>
+
+                <!--Project cards are wrapped in a container and row divs to help size and center the card
+                    TODO: Further sizing and styling will need to be done in CSS-->
+                <div id="carousel-projects" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="card col-sm">
+                                        <img class="card-image-top" src="https://placehold.co/150x100">
+                                        <div class="card-body">
+                                            <h5 class="card-title">First Slide</h5>
+                                            <p class="card-text">This is information about my project</p>
+                                            <a href="#" class="btn btn-primary">Github</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-projects" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-projects" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </section>
 
+            <!--TODO: Section containing work experience.-->
             <section id="experience">
                 <h1>Experience</h1>
             </section>
