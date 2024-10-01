@@ -1,8 +1,22 @@
 const swiper = new Swiper('.swiper', {
-    slidesPerView: 3,
-    spaceBetween: 30,
+
+
+    slidesPerView: 1,
+    spaceBetween: 10,
     loop: true,
-    centeredSlides: true,
+    centeredSlides: false,
+  
+    // Breakpoints for responsive layout
+    breakpoints: {
+      600: { // Devices with width >= 600px
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1000: { // Devices with width >= 1000px
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
   
     //pagination
     pagination: {

@@ -1,9 +1,30 @@
 .swiper {
-    width: 70%;
-    height: auto;
-  }
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
 
 :root {
-    --swiper-navigation-color: black;
-    --swiper-pagination-color: black;
-  }
+  --swiper-navigation-color: black;
+  --swiper-pagination-color: black;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-wrap: nowrap; /* Prevents wrapping of slides */
+}
+  
+.swiper-slide {
+  flex-shrink: 0; /* Prevents shrinking of the slide */
+  width: 100%; /* Full width for each slide */
+  display: flex;
+  justify-content: center; /* Center content inside the slide */
+  align-items: center;
+  overflow: hidden;
+}
+
+.project-image {
+  display: block;
+  width: 100%; /* Ensures the image takes the full width of its container */
+  height: auto; /* Keeps the image ratio intact */
+}
