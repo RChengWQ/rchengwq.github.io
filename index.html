@@ -56,20 +56,20 @@
 
         <!--TODO: Section containing a welcome to the site.
             May be used for summary, in which case about me section will be replaced-->
-        <section id="welcome">
+        <section id="welcome" >
             <p class="text-center mb-4">Welcome to my website.</p>
         </section>
 
         <!--TODO: Section containing short summary. 
             May put skills in this section, may create separate section for skills.-->
-        <section id="about-me">
+        <section id="about-me" class="border-top">
             <h1 class="text-center mb-4">About Me</h1>
         </section>
 
         <!--Section containing carousel to show off projects.
             Cards are used to organise the slides.
             Project slides, will include Project name, image, link to github repo, and a list of skills used-->
-        <section id="projects">
+        <section id="projects" class="border-top">
             <div class="container">
                 <h1 class="text-center mb-4">My Projects</h1>
 
@@ -119,9 +119,27 @@
             </div>
         </section>
 
-        <!--TODO: Section containing work experience.-->
-        <section id="experience" >
-            <h1 class="text-center mb-4">Experience</h1>
+        <!--TODO: Adding relevant content, styling text to display nicely on smaller screens.-->
+        <section id="experience" class="border-top" >
+            <div class="container">
+
+                <h1 class="text-center mb-4">Experience</h1>
+
+                <div class="exp-card">
+                    <img class="exp-image" src="images/mastek_logo.jpg">
+                    <div class="exp-body">
+                        <h3 class="exp-company">Mastek</h3>
+                        <h5>Associate Consultant - Delivery</h5>
+                        <h6>April 2022 - April 2023</h6>
+                        <p>Text</p>
+
+                        <h5>Technology Graduate</h5>
+                        <h6>January 2022 - April 2022</h6>
+                        <p>Text</p>
+                    </div>
+                    
+                </div>
+            </div>
         </section>
 
     </main>
