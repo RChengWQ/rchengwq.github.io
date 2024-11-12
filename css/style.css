@@ -5,13 +5,9 @@
 /*This section will contain the styling related to the Experience section*/
 
 .exp-image{
-    display: inline-block; /*Makes the image inline with the text body*/
-    height: 100px;
-    width: auto;
+    max-width: 100px;
     vertical-align: top; /* Align image with the top of the container*/
     padding-right: 2%;
 }
 
-.exp-body{
-    display: inline-block; /*Makes the text body inline with the iamge*/
-}
+
