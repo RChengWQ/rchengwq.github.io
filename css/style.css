@@ -5,7 +5,7 @@
 /*This section will contain the styling related to the Experience section*/
 
 .exp-image{
-    max-width: 100px;
+    max-width: 100%;
     vertical-align: top; /* Align image with the top of the container*/
     padding-right: 2%;
 }
