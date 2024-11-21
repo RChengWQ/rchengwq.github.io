@@ -1,6 +1,6 @@
 html{
     scroll-padding-top: 56px;
-    /*This stops the navbar overlapping due to the use of sticky-top*/
+    /*This stops the navbar overlapping section titles when using anchor links, due to the use of sticky-top*/
 }
 
 .icon-link i{
