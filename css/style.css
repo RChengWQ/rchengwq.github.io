@@ -1,3 +1,8 @@
+html{
+    scroll-padding-top: 56px;
+    /*This stops the navbar overlapping due to the use of sticky-top*/
+}
+
 .icon-link i{
     font-size: 2rem;
 }
@@ -9,5 +14,7 @@
     vertical-align: top; /* Align image with the top of the container*/
     padding-right: 2%;
 }
+
+
 
 
