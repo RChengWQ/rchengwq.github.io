@@ -239,18 +239,22 @@
 
         <!--Section containing relevant experience
             Used bootstrap grid system to position image inline with text
-            col-sm-2 reduces the space the image takes up on small devices.-->
+            Text uses all 12 sections to make sure it is always full width on small devices.
+            This forces the image to stack on top.
+            md breakpoint is used to adjust the size for medium and above displays.-->
         <section id="experience" class="border-top" >
             <div class="container">
 
                 <h1 class="text-center mb-4">Experience</h1>
 
                 <div class="exp-card row">
-                    <div class="exp-image d-inline-block col-3 col-sm-2">
-                        <img class="img-fluid rounded"src="images/mastek_logo.jpg" >
+                    <!-- Image Section -->
+                    <div class="mx-auto exp-image d-inline-block col-4 col-md-2">
+                        <img class="img-fluid rounded" src="images/mastek_logo.jpg" alt="Mastek Logo">
                     </div>
 
-                    <div class="exp-body d-inline-block col">
+                    <!-- Text Section -->
+                    <div class="exp-body d-inline-block col-12 col-md-10">
                         <h3 class="exp-company">Mastek</h3>
                         <h5>Associate Consultant - Delivery</h5>
                         <h6>April 2022 - April 2023</h6>
