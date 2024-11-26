@@ -60,10 +60,26 @@
             <p class="text-center mb-4">Welcome to my website.</p>
         </section>
 
-        <!--TODO: Section containing short summary. 
+        <!--Section containing short summary about me, along with my image. 
             May put skills in this section, may create separate section for skills.-->
         <section id="about-me" class="border-top">
-            <h1 class="text-center mb-4">About Me</h1>
+            <div class="container">
+                <h1 class="text-center mb-4">About Me</h1>
+
+                <!--Used bootstrap grid system to position image inline with text
+                    Text uses all 12 sections to make sure it is always full width on small devices.
+                    This forces the image to stack on top.
+                    md breakpoint is used to adjust the size for medium and above displays.-->
+                <div class="row">
+                    <div class="d-flex col-12 col-md-6 justify-content-center">
+                        <img class="img-fluid rounded max-width: 100%" src="https://via.placeholder.com/300" alt="">
+                    </div>
+                    <p class="d-inline-block col-12 col-md-6">
+                        I’m a passionate software developer with experience in building responsive web applications and solving complex problems through clean, efficient code. I specialize in front-end and back-end development, using technologies like JavaScript, Python, and Bootstrap. Driven by curiosity and a love for learning, I enjoy crafting user-focused solutions and exploring new tools to bring ideas to life.
+                    </p>
+                </div>
+            </div>
+            
         </section>
 
         <!--Section containing carousel to show off projects.
