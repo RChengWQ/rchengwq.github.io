@@ -54,10 +54,29 @@
         
     <main class="pt-5">
 
-        <!--TODO: Section containing a welcome to the site.
-            May be used for summary, in which case about me section will be replaced-->
+        <!--Section containing a welcome to the site.-->
+        <!--TODO: Finish layout, replace placeholder image, perhaps add a job title under name-->
         <section id="welcome" >
-            <p class="text-center mb-4">Welcome to my website.</p>
+            <div class="container">
+                <div class="row">
+
+                    <!--Used bootstrap grid system to position image inline with text
+                    Text uses all 12 sections to make sure it is always full width on small devices.
+                    This forces the image to stack on top.
+                    md breakpoint is used to adjust the size for medium and above displays.-->
+                    <div class="d-flex col-12 col-md-6 justify-content-center">
+                        <img class="img-fluid rounded" src="https://via.placeholder.com/300" alt="">
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <h1 class="text-center mb-4">Ricky Cheng</h1>
+                        <p class="text-center mb-4">Welcome to my website.</p> 
+                        <p>Here, you’ll find a showcase of the applications and projects I’ve developed, each reflecting my passion for clean, efficient, and user-focused solutions. Whether it’s front-end design or back-end logic, I’m always eager to solve problems and build impactful software.</p>
+                    </div>
+                </div>
+                
+            </div>
+            
         </section>
 
         <!--Section containing short summary about me, along with my image. 
