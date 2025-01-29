@@ -13,8 +13,9 @@
   flex-shrink: 0; /* Prevents shrinking of the slide */
   width: 100%; /* Full width for each slide */
   display: flex;
-  justify-content: center; /* Center content inside the slide */
-  align-items: center;
+  height: auto;
+  justify-content: center; /* Center content inside the slide horizontally */
+  align-items: center; /* Center content inside the slide vertically */
   overflow: hidden;
   position: relative;
 }
