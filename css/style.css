@@ -14,6 +14,19 @@ html{
     height: 100%;
 }
 
+.skill-gallery div{
+    aspect-ratio: 1 / 1;  /* Makes each container a perfect square */
+    display: flex;  /* Enables flexbox for centering */
+    justify-content: center;  /* Centers the image horizontally */
+    align-items: center;  /* Centers the image vertically */
+}
+
+.skill-gallery img{
+    width: 80%;  /* Ensures a uniform width for all icons relative to their container */
+    height: 80%; /* Ensures a uniform height, maintaining aspect ratio */
+    object-fit: contain; /* Ensures the entire SVG fits within the given width/height without distortion */
+}
+
 
 
 
