@@ -43,5 +43,5 @@
 }
 
 .swiper-slide:hover .project-overlay {
-  opacity: 1;
+  opacity: 0.9;
 }
